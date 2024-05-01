@@ -8,4 +8,5 @@ A distro is a complete operating system package built upon the Linux kernel. It 
 ## Popular Linux Distributions:
 There's a vast array of Linux distros, each catering to specific needs and preferences. Here are some widely used examples:
 - **Ubuntu:**:A beginner-friendly distro known for its ease of use, extensive software repositories, and strong community support. (We'll explore Ubuntu in Docker later!)
-![Ubuntu](https://raw.githubusercontent.com/HashimThePassionate/Docker/main/02_Linux_command_line/01_Linux_dstribution/images/ubuntu.jpeg){ width: 100px;}
+<img src="https://raw.githubusercontent.com/HashimThePassionate/Docker/main/02_Linux_command_line/01_Linux_dstribution/images/ubuntu.jpeg" alt="Ubuntu" width="100px">
+
