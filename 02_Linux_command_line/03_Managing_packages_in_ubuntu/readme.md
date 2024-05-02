@@ -13,13 +13,13 @@ APT, short for Advanced Package Tool, is a command-line utility for managing sof
 ```bash
     apt
 ```
-<img src="" alt="apt" width="100%">
+<img src="https://raw.githubusercontent.com/HashimThePassionate/Docker/main/02_Linux_command_line/03_Managing_packages_in_ubuntu/images/apt_package01.png" alt="apt" width="100%">
 
 ## Now lets simple install nano text editor with apt
 ```bash
     apt install nano
 ```
-<img src="" alt="nano" width="100%">
+<img src="https://raw.githubusercontent.com/HashimThePassionate/Docker/main/02_Linux_command_line/03_Managing_packages_in_ubuntu/images/apt_nano_error02.png" alt="nano" width="100%">
 
 You will get this error but why??
 
@@ -27,7 +27,7 @@ You will get this error but why??
 ```bash
 apt list 
 ```
-<img src="" alt="error" width="100%">
+<img src="https://raw.githubusercontent.com/HashimThePassionate/Docker/main/02_Linux_command_line/03_Managing_packages_in_ubuntu/images/cannot_find_nano03.png" alt="error" width="100%">
 
 when we run this command apt install nano apt will look to their database if it is not available than it can simply run exception,Look we cannot find nano package in list, so what should we do?
 Simple tell apt to update packages database list directories and then install again
@@ -36,13 +36,13 @@ Simple tell apt to update packages database list directories and then install ag
 ```bash
     apt update
 ```
-<img src="" alt="update" width="100%">
+<img src="https://raw.githubusercontent.com/HashimThePassionate/Docker/main/02_Linux_command_line/03_Managing_packages_in_ubuntu/images/update_packages04.png" alt="update" width="100%">
 
 ## Reinstall nano through apt
 ```bash
     apt install nano
 ```
-<img src="" alt="Installing Nano" width="100%">
+<img src="https://raw.githubusercontent.com/HashimThePassionate/Docker/main/02_Linux_command_line/03_Managing_packages_in_ubuntu/images/installing_nano05.PNG" alt="Installing Nano" width="100%">
 
 ## Now to remove nano 
 ```bash
