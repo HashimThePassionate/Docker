@@ -70,6 +70,8 @@ root@f0b081cd4c7a:/#
 3.  0$ (This will tell the location of shell program)
 4.  history (This will show you all previous commands which we executed)
 
+## Linux File System Directory Structure:
+<img src="https://raw.githubusercontent.com/HashimThePassionate/Docker/main/02_Linux_command_line/02_Running_ubuntu_in_docker/images/Linux_file_system073.png" width="100%">
 
 
 
