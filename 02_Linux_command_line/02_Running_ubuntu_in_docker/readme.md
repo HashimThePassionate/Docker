@@ -38,7 +38,7 @@ Now We can see stop containers as well, look we created ubuntu image with unique
 ```bash
     docker run -it ubuntu
 ```
-<img src="" width="100%">
+<img src="https://raw.githubusercontent.com/HashimThePassionate/Docker/main/02_Linux_command_line/02_Running_ubuntu_in_docker/images/interactive_with_ubuntu05.PNG" width="100%">
 
 To start a container and interact with it 
 1. docker run (simply run docker)
@@ -63,7 +63,7 @@ root@f0b081cd4c7a:/#
     $0
     history
 ```
-<img src="" width="100%">
+<img src="https://raw.githubusercontent.com/HashimThePassionate/Docker/main/02_Linux_command_line/02_Running_ubuntu_in_docker/images/basic_shell_interaction06.png" width="100%">
 
 1.  echo Hello Docker (This will just print Hello Docker on terminal)
 2.  whoami (This command will tell you the current user)
