@@ -12,7 +12,7 @@ Follow these steps:
     docker run ubuntu
 ```
 This command first check ubuntu is available in any container? if not that it will pull or download from docker hub.
-<img src="https://raw.githubusercontent.com/HashimThePassionate/Docker/main/02_Linux_command_line/02_Running_ubuntu_in_docker/images/Docker_run_ubuntu_02.png" alt="Install Ubuntu" width="500px">
+<img src="https://raw.githubusercontent.com/HashimThePassionate/Docker/main/02_Linux_command_line/02_Running_ubuntu_in_docker/images/Docker_run_ubuntu_02.png" alt="Install Ubuntu" width="100%">
 
 **Check Running Process or containers:**
 ```bash
