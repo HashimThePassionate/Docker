@@ -1,0 +1,16 @@
+---
+# start yml file with three dashes --- 
+# key value pairs are separated by colon :
+# don't use commas
+name: Docker
+price: 0
+is_available: true
+tags: 
+  - container
+  - docker
+  - virtualization
+# Replace lists or arrays with hypens - 
+author:
+    name: Hashim,
+    email: xyz@gmail.com
+# objects properties are indented

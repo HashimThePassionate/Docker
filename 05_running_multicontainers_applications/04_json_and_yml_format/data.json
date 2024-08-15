@@ -1,0 +1,14 @@
+{
+    "name": "Docker",
+    "price": 0,
+    "is_available": true,
+    "tags": [
+        "container",
+        "docker",
+        "virtualization"
+    ],
+    "author": {
+        "name": "Hashim",
+        "email": "xyz@gmail.com"
+    }
+}
