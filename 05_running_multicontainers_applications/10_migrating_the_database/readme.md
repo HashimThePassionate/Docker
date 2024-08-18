@@ -14,7 +14,7 @@ In our Node.js project, we use `migrate-mongo` to handle migrations. This tool i
 
 ### Key Components 📋
 
-1. **package.json**:
+1. **package.json**: -> [Package.js](./backend/package.json)
     ```json
     "devDependencies": {
       "jest": "^26.6.3",
@@ -25,7 +25,7 @@ In our Node.js project, we use `migrate-mongo` to handle migrations. This tool i
     ```
     - **migrate-mongo**: This package manages migrations for MongoDB.
 
-2. **docker-entrypoint.sh**:
+2. **docker-entrypoint.sh**: **-> [docker-entrypoint.sh](./backend/docker-entrypoint.sh)**
     ```bash
     #!/bin/sh
     
@@ -42,7 +42,7 @@ In our Node.js project, we use `migrate-mongo` to handle migrations. This tool i
     - **Migrating the database**: Runs the migration scripts to update the database schema.
     - **Starting the server**: Starts the Node.js server after migrations are applied.
 
-3. **Migration File (in the `migrations` directory)**:
+3. **Migration File (in the `migrations` directory)**: **-> [migration file](./backend/migrations/20210208213312-populate-movies.js)**
     ```javascript
     module.exports = {
       async up(db, client) {
@@ -70,7 +70,7 @@ In our Node.js project, we use `migrate-mongo` to handle migrations. This tool i
 
 ### Docker Compose Integration 🛠️
 
-In our `docker-compose.yml` file, we have:
+In our `docker-compose.yml` file, we have: **-> [docker-compose file](./docker-compose.yml)**
 
 ```yaml
 services:
