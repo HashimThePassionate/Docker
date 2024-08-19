@@ -200,6 +200,10 @@ ENTRYPOINT ["nginx", "-g", "daemon off;" ]
 ```sh
 docker-compose -f docker-compose.prod.yml up -d --build
 ```
+
+# Deployed
+<img src="./images/deploy_on_digitalocean.png" alt="Deployed on Digital Occean">
+
 ## 🎯 Conclusion
 
 You have successfully deployed your multi-container application using Docker Compose on a DigitalOcean VPS. The application is now running, and you can access it through the configured ports. 🥳
