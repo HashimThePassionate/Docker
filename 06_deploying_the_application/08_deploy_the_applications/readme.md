@@ -166,7 +166,40 @@ The build process includes downloading the base images, installing dependencies,
  ✔ Container 08_deploy_the_applications-api-1  Started                                                  0.7s 
  ✔ Container 08_deploy_the_applications-web-1  Started                                                  0.7s 
 ```
+## Update Dockerfile.prod 
+```sh
+FROM node:14.16.0-alpine3.13 AS build-stage
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
 
+FROM nginx:1.12-alpine 
+COPY --from=build-stage /app/build /usr/share/nginx/html
+EXPOSE 80
+ENTRYPOINT [ "nginx", "-g", "daemon off;" ]
+```
+
+also update Dockerfile.prod under frontend directory
+```sh
+FROM node:14.16.0-alpine3.13 AS build-stage
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+ENV REACT_APP_API_URL=http://159.65.37.161:3001/api
+RUN npm run build
+
+FROM nginx:1.12-alpine 
+COPY --from=build-stage /app/build /usr/share/nginx/html
+EXPOSE 80
+ENTRYPOINT ["nginx", "-g", "daemon off;" ]
+```
+## Rebuild 
+```sh
+docker-compose -f docker-compose.prod.yml up -d --build
+```
 ## 🎯 Conclusion
 
 You have successfully deployed your multi-container application using Docker Compose on a DigitalOcean VPS. The application is now running, and you can access it through the configured ports. 🥳

@@ -3,11 +3,10 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
+ENV REACT_APP_API_URL=http://159.65.37.161:3001/api
 RUN npm run build
 
 FROM nginx:1.12-alpine 
-RUN addgroup app && adduser -S -G app app
-USER app
 COPY --from=build-stage /app/build /usr/share/nginx/html
 EXPOSE 80
 ENTRYPOINT [ "nginx", "-g", "daemon off;" ]
