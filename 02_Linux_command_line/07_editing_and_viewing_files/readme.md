@@ -64,12 +64,14 @@ To save the file, press `Ctrl + O` and then `Enter`. To exit `nano`, press `Ctrl
 For demonstration purposes, let's create a large text file named `large_text_file.txt` filled with repeated lines using a simple command.
 
 ```bash
-root@d6b5038cb0b4:~# echo "This is a line of text that will be repeated." | head -n 500 > large_text_file.txt
+root@d6b5038cb0b4:~# yes "This is a line of text that will be repeated." | head -n 500 > large_text_file.txt
 ```
 
-- `echo "This is a line of text that will be repeated."`: Outputs the string `"This is a line of text that will be repeated."`.
-- `head -n 500`: Repeats this line 500 times.
-- `> large_text_file.txt`: Redirects the output to a file named `large_text_file.txt`, creating it if it doesn’t exist.
+- **`yes "This is a line of text that will be repeated."`**: Repeatedly outputs the specified line of text indefinitely.
+- **`|`**: Pipes the output of the `yes` command to the next command.
+- **`head -n 500`**: Takes the first 500 lines from the piped input.
+- **`>`**: Redirects the output to a file.
+- **`large_text_file.txt`**: The file where the first 500 lines are saved. 
 
 ### Verifying File Creation
 
